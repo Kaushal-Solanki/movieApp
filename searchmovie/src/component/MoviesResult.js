@@ -10,7 +10,7 @@ class MoviesResult extends Component {
     return (
       <div>
         {movies.map((items) => {
-          return <MovieItems movies={items} />
+          return <MovieItems movies={items} key={items.id} />
         })}
       </div>
     )
